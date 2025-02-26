@@ -24,10 +24,10 @@ spec:
         - name: WELCOME_MESSAGE
           valueFrom:
             configMapKeyRef:
-              name: sample-config
+              name: yap-config
               key: welcome-message
         - name: APP_PASSWORD
           valueFrom:
             secretKeyRef:
-              name: sample-secret
+              name: yap-secret
               key: password
